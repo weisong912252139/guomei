@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>商品-详情-评价</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/goods_details_assess.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<a href="index.html"><img class="return_left" src="img/left_jiantou.png" /></a>
+				<div class="titles">
+					<div class="data">
+						<div class="title">商品</div>
+						<div>详情</div>
+						<div>评价</div>
+					</div>
+					<div class="red_tiao"></div>
+				</div>
+	
+				<i class="icon-external-link enter"></i>
+				<img class="sandian" src="img/sandian.png" />
+			</div>
+			
+		</header>
+		<section>
+			<ul class="texts">
+				<li class="show">
+					<div class="view">
+						<div class="bo">
+							<img src="img/lunbo.png" id="shopImg"/>
+							<img src="img/lunbo.png" />
+							<img src="img/lunbo.png" />
+							<img src="img/lunbo.png" />
+							<img src="img/lunbo.png" />
+						</div>
+					</div>
+					<div class="produce">
+						<span class="self-support">自营</span>
+						<span class="synopsis" id="shopDescription"> Apple MacBook Air MD760CH/Bi 13.3英寸宽屏笔记本电脑</span>
+						<p class="English">Wine, grapes, fruit or juice after fermentation to brew alcoholic beverages from the. In the fruit, because of high glucose content ...</p>
+						<p class="news">2014年新款MacBook Air，CPU全新升级，长达12小时的电池使用时间， 满载动力，满足你的一天！</p>
+						<span class="jiage">¥ <span id="shopPrice">6288.00</span></span>
+						<span class="baoyou">包邮</span>
+						<div class="nums">
+							<span class="nums_text">数量</span>
+							<div class="buy_nums">
+								<img class="jian" src="img/jian.png" />
+								<input class="num" id='shopNum' type="number" value="1" />
+								<img class="jia" src="img/jia.png" />
+							</div>
+							<span class="surplus">仅剩 <span class="remainNum">6</span>件</span>
+						</div>
+					</div>
+					<div class="consignee">
+						<div class="address">
+							<span class="service">送至</span>
+							<div>
+								<i class="icon-map-marker"></i>
+								<span class="select_province">选择省</span>
+								<span class="select_city">选择市</span>
+								<span class="select_county">选择县</span>
+							</div>
+							<img class="cantonal area" src="img/right_jiantou.png" />
+						</div>
+						<div class="send">
+							<span class="new_huo">现货</span>
+							<span>由</span>
+							<span>国美酒窖</span>
+							<span>发货并负责售后服务</span>
+						</div>
+						<img class="serve" src="img/serve.png" />
+					</div>
+					
+					<aside>
+				    		<div class="city">
+				        		<div class="container">
+				  			<a href="javascript:;" class="goback"><img src="./img/left_jiantou.png" alt=""></a>
+				  			<div class="main">
+				  				选择地区
+				  			</div>
+				         	<i class="icon-remove logout" id="close"></i>
+				  			
+				  		</div>
+				        <!-- 暂无 港澳台 如需要可在city.json文件中添加-->
+				        <select id="province" name="province" onchange="doProvAndCityRelation();">
+				    　　		<option id="choosePro"value="-1">所在省份</option>
+				    　　	</select>
+				        <select id="citys" name="city" onchange="doCityAndCountyRelation();">
+				   　　　	<option id='chooseCity' value='-1'>所在城市</option>
+				   　　　</select>
+				        	<select id="county" name="county">
+				   　　　	<option id='chooseCounty' value='-1'>所在区/县</option>
+				  　　　	</select>
+				      </div>
+    					</aside>
+					<div class="comment_address">
+						<div class="comment">
+							<span>评价(<span>13434</span>)</span>
+							<span class="reputably">好评度:<span class="percent">98% </span></span>
+							<img src="img/right_jiantou.png" />
+						</div>
+						<ul class="comments">
+							<!--<li class="content">
+								<img class="head_portrait" src="img/headPortrait.png" />
+								<span class="name">松子</span>
+								<img src="img/xingxing.png" />
+								<p class="text">忠实的果粉，外观漂亮、轻薄、携带方便，配置也不错，国美发货 也快，快递员服务态度超好，当然5分评。此处最多展示两行，…</p>
+								<span class="commodity">颜色:银灰 版本:全网通</span>
+							</li>-->
+						</ul>
+					</div>
+					<div class="shop">
+						<div class="tianwo">
+							<img class="shop_img" src="img/kanwu.png" />
+							<a href="store_details.html"><img class="go_shop" src="img/right_jiantou.png" /></a>
+							<div class="shop_name">
+								<span id="shopName">亚飞专卖店</span>
+								<span class="self-support">自营</span>
+							</div>
+							<img class="xingxing" src="img/xingxing.png" />
+						</div>
+						<span class="link">联系客服</span>
+						<a href="go_in_store.html"><span class="go_in">进入店铺</span></a>
+					</div>
+					<div class="seek">
+						<span class="seek_details">查看全部图文详情</span>
+						<a href="###"><img class="go_seek" src="img/right_jiantou.png" /></a>
+					</div>
+					
+				</li>
+				<li>
+					<div class="goods_describe">
+					<ul class="details">
+						<li class="marque">商品介绍</li>
+						<li>规格参数</li>
+					</ul>
+					<ul class="parameter">
+						<li class="guige show1">
+							<img src="img/bourgogne.png"/>
+						</li>
+						<li class="canshu">
+							<div>
+								香型：<span>酱香型</span>
+							</div>
+							<div>
+								品牌：<span>茅台</span>
+							</div>
+							<div>
+								产地：<span>贵州</span>
+							</div>
+							<div>
+								规格：<span>500ml</span>
+							</div>
+							<div>
+								包装：<span>单瓶</span>
+							</div>
+							<div>
+								价格：<span>700-199</span>
+							</div>
+							<div>
+								原材料：<span>高粱、小麦、水</span>
+							</div>
+							<div>
+								酒精度：<span>53%</span>
+							</div>
+						</li>
+						
+					</ul>
+					</div>
+				</li>
+				<li>
+					<div class="evaluate">
+						<div class="valuation">
+							<div class="all">全部</div>
+							<div>好评(<span>456+</span>)</div>
+							<div>中评(<span>456+</span>)</div>
+							<div>差评(<span>0</span>)</div>
+							<span class="good">
+								<p>好评度</p>
+								<p>100%</p>
+							</span>
+						</div>
+						<ul class="neirong">
+							<!--<li>
+								<div class="content">
+									<img class="head_portrait" src="img/headPortrait.png" />
+									<span class="name">松子</span>
+									<img src="img/xingxing.png" />
+									<p class="text">忠实的果粉，外观漂亮、轻薄、携带方便，配置也不错，国美发货 也快，快递员服务态度超好，当然5分评。此处最多展示两行，…</p>
+									
+										<span class="commodity">颜色:银灰 版本:全网通</span>
+										<p class="buy_time">3013-08-23 17:37:00</p>
+									
+								</div>
+								<input class="btn2" type="button" value="删除" />
+							</li>-->
+							
+						</ul>
+						<div class="add_comments">
+							添加评价 <input class="add" type="text" placeholder="亲，给个好评呦!!!"/><button class="btn">提交</button>
+						</div>
+					</div>
+					
+				</li>
+			</ul>
+
+		</section>
+		<footer>
+			<div class="collect" id="love">
+				<i class="icon-heart-empty heart"></i>
+				<p>收藏</p>
+			</div>
+			<div class="shopping_car" >
+				<a href="shoppongCart.html">
+					<img class="car" src="img/shopping_car.png" />
+					<p>购物车</p>
+				</a>
+			</div>
+			<div class="joincar" id="addShoppingCart">
+				<p>加入购物车</p>
+			</div>
+			<div class="buy">
+				<a href="fillOrder.html">
+					<p>立即购买</p>
+				</a>
+			</div>
+		</footer>
+	</body>
+	<script src="js/goods_details_assess.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/assessAjax.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/citySelect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/editorAddress.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/addShopCartAjax.js" charset="utf-8"></script>
+	
+</html>

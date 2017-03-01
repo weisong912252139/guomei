@@ -1,0 +1,508 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	color: black;
+}
+ body{
+	background-color: rgb(247,247,247);
+}
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgb(247,247,247);
+}
+.head{
+	width: 100%;
+	height: 1.2rem;
+	display: flex;
+}
+.return_left{
+	width: 0.3rem;
+	height: 0.5rem;
+	margin: 0.4rem 0 0.2rem 0.2rem;
+}
+.titles{
+	position: relative;
+	margin-right: 0.4rem;
+}
+#love .active{
+	color: red;
+}
+.data{
+	display: flex;
+	padding-top: 0.3rem;
+}
+.data div{
+	font-size: 0.5rem;
+	color: darkgray;
+	margin-left: 0.7rem;
+}
+
+.data div.title{
+	color: red;
+}
+.red_tiao{
+	width: 1rem;
+	height: 0.1rem;
+	background-color: red;
+	position: absolute;
+	bottom: 0;
+	left: 0.7rem;
+}
+.enter{
+	font-size: 0.6rem;
+	margin-top: 0.3rem;
+}
+.sandian{
+	width: 0.1rem;
+	height: 0.6rem;
+	margin: 0.3rem 0 0 0.3rem;
+}
+section{
+	width: 100%;
+	margin-bottom: 1.3rem;
+	margin-top: 1.2rem;
+}
+.texts>li.show{
+	display: block;
+}
+.view{
+	width: 100%;
+	height: 7.5rem;
+	overflow: hidden;
+	position: relative;
+}
+.bo{
+	width: 500%;
+	height: 7.5rem;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bo img{
+	width: 20%;
+	float: left;
+}
+.produce{
+	padding: 0.2rem 0.2rem 0.1rem;
+	background-color: white;
+}
+.self-support{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.25rem;
+	text-align: center;
+	background-color: red;
+	color: white;
+	font-size: 0.2rem;
+}
+.synopsis{
+	font-size: 0.4rem;
+}
+.English{
+	font-size: 0.2rem;
+	color: lightgray;
+}
+.news{
+	font-size: 0.3rem;
+	color: red;
+}
+.jiage{
+	display: inline-block;
+	font-size: 0.6rem;
+	color: red;
+	margin: 0.1rem 0;
+}
+.baoyou{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.25rem;
+	text-align: center;
+	color: white;
+	font-size: 0.2rem;
+	background-color: orange;
+}
+
+.nums{
+	width: 100%;
+	height: 0.7rem;
+	margin-bottom: 0.2rem;
+	line-height: 0.7rem;
+	display: flex;
+}
+.nums_text{
+	font-size: 0.4rem;
+	color: lightgray;
+}
+.buy_nums{
+	display: flex;
+	height: 0.7rem;
+	margin: 0 0.2rem;
+	border: 2px solid lightgray;
+}
+.buy_nums img{
+	width: 0.7rem;
+}
+.num{
+	width: 1rem;
+	height: 0.6rem;
+	text-align: center;
+}
+.surplus{
+	font-size: 0.4rem;
+	color: red;
+}
+.consignee{
+	background-color: white;
+	margin-top: 0.2rem;
+	padding: 0.2rem;
+}
+.address{
+	width: 100%;
+	font-size: 0.3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.address span{
+	color: darkgray;
+}
+.address span.service{
+	color: lightgray;
+	margin-right: 0.4rem;
+}
+.cantonal{
+	width: 0.2rem;
+	margin-left: 1.4rem;
+}
+.send{
+	width: 100%;
+	margin-left: 1.2rem;
+	padding: 0.1rem;
+}
+.send span{
+	font-size: 0.3rem;
+	color: lightgray;
+}
+.send span.new_huo{
+	color: red;
+}
+.serve{
+	width: 100%;
+	height: 0.5rem;
+}
+.comment_address{
+	background-color: white;
+	padding: 0.2rem;
+	margin-top: 0.2rem;
+}
+.comment span{
+	font-size: 0.4rem;
+}
+.reputably{
+	margin-left: 2.3rem;
+}
+.percent{
+	color: red;
+}
+.comment img{
+	width: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+.comments{
+
+}
+.content{
+	padding: 0.2rem 0;
+	border-bottom: 1px solid lightgray;
+}
+.head_portrait{
+	width: 0.6rem;
+}
+.name{
+	font-size: 0.3rem;
+	margin-right: 0.2rem;
+}
+.text{
+	padding: 0.2rem 0;
+	font-size: 0.2rem;
+}
+.commodity{
+	font-size: 0.2rem;
+	color: lightgray;
+}
+.shop{
+	padding: 0.2rem;
+	margin-top: 0.2rem;
+	background-color: white;
+}
+.tianwo{
+	padding: 0.1rem;
+	margin-bottom: 0.2rem;
+	border-bottom: 1px solid lightgray;
+	overflow: hidden;
+}
+.shop_img{
+	width: 1.6rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+.go_shop{
+	width: 0.2rem;
+	float: right;
+	margin-top: 0.2rem;
+}
+.shop_name{
+	font-size: 0.4rem;
+}
+.xingxing{
+	height: 0.3rem;
+}
+.link,.go_in{
+	display: inline-block;
+	width: 3rem;
+	border: 1px solid gainsboro;
+	text-align: center;
+	padding: 0.1rem;
+	border-radius: 0.1rem;
+}
+.link{
+	margin-right: 0.5rem;
+}
+.seek{
+	margin-top: 0.2rem;
+	background-color: white;
+	text-align: center;
+	padding: 0.2rem 0;
+	overflow: hidden;
+}
+.seek_details{
+	font-size: 0.4rem;
+}
+.go_seek{
+	float: right;
+	width: 0.2rem;
+	margin-right: 0.3rem;
+}
+footer{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	border: 1px solid gainsboro;
+	font-size: 0.3rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(247,247,247);
+	box-sizing: border-box;
+}
+footer div{
+	width: 25%;
+	height: 0.8rem;
+	float: left;
+	padding: 0.2rem 0;
+	/* box-sizing: border-box; */
+}
+.heart{
+	display: inline-block;
+	font-size: 0.5rem;
+	margin-bottom: 0.1rem;
+}
+.car{
+	width: 0.5rem;
+	margin-bottom: 0.1rem;
+}
+.joincar{
+	background-color: red;
+	line-height: 0.8rem;
+	color: white;
+}
+.buy{
+	background-color: orange;
+	line-height: 0.8rem;
+}
+.buy a p{
+	color: white;
+}
+
+.details{
+	width: 100%;
+	overflow: hidden;
+	background-color: rgb(247,247,247);
+}
+.details li{
+	float: left;
+	width: 50%;
+	padding: 0.3rem 0;
+	text-align: center;
+	font-size: 0.4rem;
+}
+.details li.marque{
+	background-color: white;
+}
+.parameter{
+	padding: 0 0.2rem;
+	font-size: 0.4rem;
+	color: lightgray;
+	background-color: white;
+}
+.parameter li div{
+	border-top: 1px solid lightgray;
+	padding: 0.2rem 0;
+}
+.evaluate{
+	background-color: white;
+}
+.valuation{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 0.2rem;
+}
+.valuation div{
+	padding: 0.2rem;
+	border-radius: 0.08rem;
+	background-color: pink;
+}
+.valuation div.all{
+	padding: 0.2rem 0.3rem;
+	background-color: red;
+}
+.valuation .good{
+	display: inline-block;
+	background-color: deepskyblue;
+	padding: 0.1rem;
+}
+.buy_time{
+	color: lightgray;
+	margin-top: 0.1rem;
+}
+.texts>li{
+	display: none;
+}
+.parameter>li{
+	display: none;
+}
+.parameter>li.show1{
+	display: block;
+}
+.guige{
+	width: 100%;
+}
+.guige img{
+	width: 100%;
+}
+.neirong{
+	padding:0 0.1rem;
+}
+.neirong li{
+	position: relative;
+}
+.add_comments{
+	padding: 0.4rem 0.1rem;
+	font-size: 0.3rem;
+}
+.add_comments input{
+	width: 4rem;
+	height: 1rem;
+	font-size: 0.3rem;
+	border: 1px solid darkgray;
+	margin: 0 0.3rem 0 0.2rem;
+}
+.btn{
+	width: 1.2rem;
+	height: 0.6rem;
+	border-radius: 0.08rem;
+	background-color: orangered;
+	outline: none;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem;
+}
+.goback{
+	width: 0.2rem;
+	margin-top: 0.1rem;
+}
+.main{
+	font-size: 0.4rem;
+	margin-top: 0.2rem;
+}
+.logout{
+	font-size: 0.8rem;
+	/*margin-top: 0.1rem;*/
+}
+/* 侧边栏的样式书写 */
+aside{
+  width: 100%;
+  height: 100%;
+  background: rgba(103,103,103,0.6);
+  display: none;
+  position: fixed;
+  right: -7.5rem;
+  top: 1.2rem;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 2s linear;
+}
+.city{
+  position: absolute;
+  width: 6.5rem;
+  height: 100%;
+  right: 0;
+  top: 0rem;
+  background: rgb(247,247,247);
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px gray;
+
+
+}
+.city select{
+  width: 100%;
+  height: 1rem;
+  /* background: lime; */
+  position: relative;
+  font-size: 0.32rem;
+  padding: 0;
+  border: none;
+  text-align: center;
+  background-color: white;
+  margin-top: 0.2rem;
+}
+
+.city select:focus{
+  outline: none;
+}
+
+.city select option{
+  text-align: center;
+}
+
+.btn2{
+	position: absolute;
+	bottom: 0.1rem;
+	right: 0;
+	width: 1rem;
+	height: 0.5rem;
+	margin-top: 0.2rem;
+	background-color: red;
+	color: white;
+}
+/* section {
+	background: red;
+} */
+body{
+	overflow: hidden;
+}

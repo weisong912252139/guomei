@@ -1,0 +1,156 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#fff;
+} */
+
+.sendMessage .header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(225,225,225);
+}
+
+
+.sendMessage .container {
+  width: 100%;
+  height: 0.9rem;
+  background: rgb(239,239,239);
+}
+.sendMessage .goback{
+  float: left;
+  width: 0.8rem;
+  line-height: 0.9rem;
+  text-align: center;
+  /* background: red; */
+}
+.sendMessage .goback img{
+  width: 0.3rem;
+  height: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
+.sendMessage .main{
+  text-align: center;
+  font-size: 0.44rem;
+  line-height: 0.9rem;
+  margin: 0 0.8rem;
+  font-weight: 200;
+  /* background: lime; */
+}
+.sendMessage .logout{
+  float: right;
+  font-size: 0.36rem;
+  line-height: 0.9rem;
+  width: 1.5rem;
+  text-align: center;
+  color: rgb(131, 133, 136);
+  /* background: blue; */
+}
+
+
+/*中间内容*/
+.sendMessage .section{
+  margin-top: 1rem;
+}
+
+.sendMessage .sendTime{
+  padding: 0.35rem 0.2rem;
+  border-bottom: 1px solid rgb(211,211,211);
+}
+.sendMessage .sendTime p{
+    font-size: 0.4rem;
+    color: rgb(155,155,155);
+    font-weight: 200;
+}
+.sendTime .whichTime{
+   font-size: 0;
+}
+.sendMessage .sendTime .whichTime span{
+  margin-top: 0.2rem;
+  margin-right: 0.2rem;
+  font-size: 0.34rem;
+  font-weight: 200;
+  display: inline-block;
+  padding: 0.2rem 0.25rem;
+  border-radius: 0.2rem;
+  border: 1px solid rgb(233,233,233);
+}
+.sendMessage .sendTime .whichTime span.active{
+  color: red;
+  border: 1px solid red;
+  background: url('../img/duigou.png') no-repeat;
+  background-size: 0.5rem;
+}
+
+
+.sendMessage .sendMethod{
+  padding: 0.3rem 0.2rem;
+}
+.sendMessage .sendMethod p.title{
+    font-size: 0.4rem;
+    color: rgb(155,155,155);
+    font-weight: 200;
+}
+.sendMessage .sendMethod p.details{
+  font-size: 0.36rem;
+  font-weight: 100;
+  line-height: 1rem;
+  /* background: red; */
+}
+.sendMessage .sendMethod .whichMethod{
+   font-size: 0;
+   border-bottom: 1px solid rgb(211,211,211);
+   padding: 0.1rem 0 0.5rem 0;
+}
+.sendMessage .sendMethod .whichMethod span{
+  margin-top: 0.2rem;
+  margin-right: 0.4rem;
+  font-size: 0.34rem;
+  font-weight: 200;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+  border: 1px solid rgb(233,233,233);
+}
+.sendMessage .sendMethod .whichMethod span.active{
+  color: red;
+  border: 1px solid red;
+  background: url('../img/duigou.png') no-repeat;
+  background-size: 0.5rem;
+}
+
+
+body{
+  margin-top: 0.9rem;
+}
+.sendMessage .footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: 1rem;
+  width: 100%;
+  height: 1.4rem;
+}
+.sendMessage .footer button{
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 7.1rem;
+  height: 1rem;
+  background: red;
+  border: none;
+  font-size: 0.4rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sendMessage .footer button:focus{
+  outline: none;
+}

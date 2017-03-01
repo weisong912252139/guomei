@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+a{
+	color: black;
+}
+body{
+	background-color: rgb(247,247,247);
+}
+#title{
+	width: 100%;
+	height: 1.28rem;
+	background-color: darkred;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.titleImg{
+	width: 0.32rem;
+	height: 0.76rem;
+	margin: 0.2rem 0.42rem 0.3rem 0.26rem;
+}
+.search_case{
+	width:4.4rem;
+	height:0.58rem;
+	border-radius: 0.08rem;
+	margin-top: 0.56rem;
+	padding-left: 0.8rem;
+}
+.search_button{
+	width: 0.25rem;
+	height: 0.25rem;
+	position: absolute;
+	top: 0.75rem;
+	left: 1.35rem;
+}
+#title a{
+	color: white;
+	margin-left: 0.2rem;
+}
+section{
+	width: 100%;
+	margin-top: 1.28rem;
+}
+.lunbo{
+	width: 100%;
+	height: 3rem;
+}
+.img1{
+	width: 100%;
+	height: 100%;
+}
+.movable{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.4rem;
+}
+.movable img{
+	width: 1.1rem;
+	height: 1.1rem;
+}
+.sift,.recommend{
+	width: 85%;
+	height: 0.6rem;
+	margin: 0.2rem auto;
+	display: flex;
+	justify-content: space-between;
+}
+.sift span,.recommend span{
+	display: inline-block;
+	width: 2rem;
+	height: 1px;
+	margin-top: 0.3rem;
+	background-color: gainsboro;
+}
+.sift p,.recommend p{
+	display: inline-block;
+	font-size: 0.4rem;
+	line-height: 0.6rem;
+	color: darkgray;
+}
+.commend{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.commend1{
+	width: 3.6rem;
+	float: left;
+	background-color: white;
+}
+.maotai{
+	
+	 float: right;
+	 position: relative;
+}
+.commend2{
+	width: 3rem;
+	height: 2.6rem;
+}
+.jiage{
+	text-align: center;
+	width: 2rem;
+	position: absolute;
+	bottom: 0.1rem;
+	left: 0.6rem;
+}
+.p1,.p2{
+	font-size: 0.18rem;
+}
+.p2{
+	color: red;
+}
+.groom{
+	width: 90%;
+	margin: 0.1rem auto;
+}
+.groom img{
+	width: 100%;
+	height: 2rem;
+	margin-bottom: 0.1rem;
+}
+.recommend_test{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.test1,.test2{
+	width: 3.3rem;
+	height: 3.4rem;
+	float: left;
+	margin: 0 0.06rem 0.06rem 0;
+	padding-top: 0.05rem;
+	text-align: center;
+	background-color: white;
+}
+.test1 img,.test2 img{
+	width: 2rem;
+	height: 2rem;
+}
+.introduce{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	text-align: left;
+}
+.introduce1{
+	display: inline-block;
+	font-size: 0.18rem;
+	width: 100%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.introduce2{
+	color: red;
+	font-size: 0.3rem;
+}

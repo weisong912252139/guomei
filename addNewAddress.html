@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html style="font-size:50px">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/editorAddress.css">
+    <title>新增收货地址页面</title>
+    <script src="js/rem.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <header>
+			<div class="container">
+				<a href="javascript:;" class="goback" id="goback"><img src="./img/left_jiantou.png" alt=""></a>
+				<div class="main">
+					新增收货地址
+				</div>
+
+			</div>
+
+		</header>
+
+    <section>
+      <form class="" action="" method="post">
+        <p class="user">
+          <span class="mode">收货人:</span>
+          <input type="text" id='receiver' name="" value="" placeholder="name">
+        </p>
+        <p class="phone">
+          <span class="mode">联系电话:</span>
+          <input type="text" name="" value="" id="to_phone" placeholder="phone">
+        </p>
+        <p class="area">
+          <span class="mode">选择地区:</span>
+          <input class="areaOne" placeholder="请选择" id='areaAddress'>
+          <i class="icon-angle-right right"></i>
+        </p>
+
+        <p class="detailed">
+          <span class="mode">详细地址</span>
+          <textarea name="name" rows="3" cols="6" id="areaTwo"></textarea>
+        </p>
+
+        <div class="default clearfix">
+          <span class="defaultAddress">设置为默认地址</span>
+          <div class="box">
+             <input type="checkbox" class="a" id="c">
+             <label for="c">
+                 <div class="animate">
+                     <div class="block"></div>
+                 </div>
+             </label>
+         </div>
+        </div>
+
+
+      </form>
+
+
+    </section>
+
+    <aside>
+      <div class="city">
+        <div class="container">
+  				<a href="javascript:;" id='goback' class="goback"><img src="./img/left_jiantou.png" alt=""></a>
+
+          <i class="icon-remove logout" id="close"></i>
+  				<div class="main">
+  					选择地区
+  				</div>
+
+
+  			</div>
+
+
+        <!-- 暂无 港澳台 如需要可在city.json文件中添加-->
+        <select id="province" name="province" onchange="doProvAndCityRelation();">
+    　　　　　　　　<option id="choosePro"value="-1">所在省份</option>
+    　　　　　　</select>
+        <select id="citys" name="city" onchange="doCityAndCountyRelation();">
+   　　　　　　　　<option id='chooseCity' value='-1'>所在城市</option>
+   　　　　　　</select>
+
+        <select id="county" name="county">
+   　　　　　　　　<option id='chooseCounty' value='-1'>所在区/县</option>
+  　　　 </select>
+      </div>
+    </aside>
+
+    <footer>
+        <button id="addNew">保存</button>
+    </footer>
+
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/citySelect.js" charset="utf-8"></script>
+    <script src="js/editorAddress.js" charset="utf-8"></script>
+    <script src="js/addNewAddressAjax.js" charset="utf-8"></script>
+
+  </body>
+</html>

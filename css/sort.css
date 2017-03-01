@@ -1,0 +1,108 @@
+*{
+ 	margin: 0;
+ 	padding: 0;
+}
+li{
+	list-style: none;
+}
+ body{
+	background-color: rgb(247,247,247);
+}
+ header{
+	width: 100%;
+	height: 1.2rem;
+	padding-top: 0.1rem;
+	border-bottom: 1px solid gainsboro;
+}
+.head{
+	width: 100%;
+	height: 1rem;
+	padding: 0.2rem;
+}
+.head a img{
+	height: 0.6rem;
+	margin-right: 0.5rem;
+}
+.search{
+	width: 4.5rem;
+	height: 0.8rem;
+	border: 1px solid darkgray;
+	border:none;
+	border-radius: 0.08rem;
+	padding-left: 1.2rem;
+	font-size: 0.4rem;
+}
+.searcher{
+	position:absolute;
+	top: 0.45rem;
+	left: 1.4rem;
+}
+section{
+	width: 100%;
+	overflow: hidden;
+}
+.nav{
+	width: 2.2rem;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(236,236,236);
+	float: left;
+}
+.nav li {
+	width: 100%;
+	height: 1.2rem;
+	padding-left: 0.1rem;
+}
+.nav li.grape{
+	background-color: white;
+	border-left: 0.1rem red solid;
+}
+.nav li p{
+	display: inline-block;
+	width: 90%;
+	height: 100%;
+	color: gray;
+	font-size: 0.4rem;
+	line-height: 1.2rem;
+	border-bottom: 1px solid darkgray;
+}
+.nav li p.active{
+	color: red;
+}
+.sorts{
+	width: 5rem;
+	margin-left: 2.4rem;
+	background-color: white;
+}
+.area,.type,.variety{
+	width: 100%;
+	padding-top: 0.2rem;
+	border-bottom: 1px solid darkgray;
+}
+.area p,.type p,.variety p{
+	font-size: 0.4rem;
+	color: darkgray;
+}
+.area_sorts,.type_sorts,.variety_sorts{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+	padding-left: 0.5rem;
+}
+.area_sorts li,.type_sorts li,.variety_sorts li{
+	width: 1.4rem;
+	font-size: 0.28rem;
+	color: darkgray;
+	padding-bottom: 0.2rem;
+}
+/*.sorts2,.sorts3,.sorts4,.sorts5,.sorts6,.sorts7,.sorts8{
+	display: none;
+}*/
+
+.listAll > div{
+	display: none;
+}
+.listAll >div.active{
+	display: block;
+}

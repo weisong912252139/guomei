@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>配送方式</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/selectSend.css">
+    <script src="js/rem.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container">
+        <a href="javascript:;" class="goback" id="goback"><img src="./img/left_jiantou.png" alt=""></a>
+        <div class="main">
+          选择配送方式
+        </div>
+
+      </div>
+
+    </div>
+    <div>
+          <div class="sendTime">
+            <p>配送时间</p>
+            <div class="whichTime">
+              <span class="active">工作日送货</span>
+              <span>节假日送货</span>
+              <span>时间不限</span>
+            </div>
+          </div>
+          <div class="sendMethod">
+            <p class="title">配送方式</p>
+            <p class="details">由[国美在线]配送三件商品</p>
+            <div class="img">
+              <img src="./img/peisong.jpg" alt="">
+
+            </div>
+            <div class="whichMethod">
+              <span class="active">快递</span>
+              <span>平邮</span>
+              <span>邮政</span>
+            </div>
+
+          </div>
+
+
+
+    </div>
+
+    <div class="footer">
+      <button id="sure">确定</button>
+    </div>
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#goback').click(function() {
+          window.history.go(-1);
+        });
+        $('.sendTime span').click(function() {
+          $(this).addClass('active').siblings().removeClass('active')
+        });
+
+        $('.sendMethod span').click(function() {
+          $(this).addClass('active').siblings().removeClass('active')
+        });
+
+
+        $('#sure').click(function() {
+          window.location.href = 'fillOrder.html?sendTime=' + $('.sendTime .active').html() + '&sendMethod=' + $('.sendMethod .active').html();
+        });
+
+
+      })
+    </script>
+
+  </body>
+</html>

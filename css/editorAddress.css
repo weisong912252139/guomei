@@ -1,0 +1,321 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid rgb(225,225,225);
+  box-sizing: border-box;
+  z-index: 2;
+}
+.container {
+  width: 100%;
+  height: 0.9rem;
+  background: rgb(239,239,239);
+}
+.goback{
+  float: left;
+  width: 0.8rem;
+  line-height: 0.9rem;
+  text-align: center;
+  /* background: red; */
+}
+.goback img{
+  width: 0.3rem;
+  height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+
+.main{
+  text-align: center;
+  font-size: 0.44rem;
+  line-height: 0.9rem;
+  margin: 0 0.8rem;
+  font-weight: 200;
+  /* background: lime; */
+}
+.logout{
+  float: right;
+  font-size: 0.5rem;
+  line-height: 0.9rem;
+  width: 1rem;
+  text-align: center;
+  color: rgb(131, 133, 136);
+  /* background: blue; */
+}
+
+/* section 保存收货店址 */
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+
+.clearfix:before,.clearfix:after{
+  display: table;
+  content: '';
+}
+.clearfix:after{
+  clear: both;
+}
+body{
+  margin-top: 0.9rem;
+  background: rgb(241,241,241);
+}
+input{
+  outline: none;
+}
+
+section form{
+  background: #fff;
+  padding-left: 0.2rem;
+}
+
+section form p,section form .default{
+  /* background: red; */
+  height: 1.2rem;
+  border-bottom: 1px solid rgb(241,241,241);
+}
+
+section form p.detailed{
+  height: 1.6rem;
+  /* width: 5rem; */
+
+}
+
+section form p.detailed textarea{
+  margin-top: 0.2rem;
+  width: 5rem;
+  max-height: 1.4rem;
+  /* background: blue; */
+  font-size: 0.4rem;
+  color: rgb(74,74,74);
+  font-weight: 200;
+  overflow: hidden;
+  resize: none;
+}
+
+section form p.detailed textarea:focus{
+  outline: none;
+}
+
+
+
+section form .mode{
+  float: left;
+  width: 1.8rem;
+  /* background: blue; */
+  line-height: 1.2rem;
+  display: inline-block;
+  font-size: 0.38rem;
+  color: rgb(163,163,163);
+  font-weight: 100;
+}
+section form .default .defaultAddress{
+  float: left;
+  /* background: blue; */
+  line-height: 1.2rem;
+  display: inline-block;
+  font-size: 0.38rem;
+  color: rgb(163,163,163);
+  font-weight: 100;
+  vertical-align: middle;
+}
+
+section form>p input{
+  vertical-align: middle;
+  float: left;
+  line-height: 1.2rem;
+  border: none;
+  font-size: 0.4rem;
+  font-weight: 200;
+  width: 5rem;
+  padding-left: 0.2rem;
+
+  /* background: red; */
+}
+section form>p input:focus{
+  outline: none;
+}
+
+.area .areaOne{
+  float: left;
+  width: 4.2rem;
+  padding-left: .2rem;
+  line-height: 1.2rem;
+  font-size: 0.4rem;
+  font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.area i.right{
+  /* background: red; */
+  line-height: 1.2rem;
+  width: 1rem;
+  text-align: center;
+}
+
+.default .box{
+  float: right;
+  /* background: blue; */
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin-right: 0.2rem;
+}
+
+
+
+.a{
+  display: none;
+}
+.animate{
+  width: 1.4rem;
+  height:0.8rem;
+  line-height: 0.8rem;
+  /* border:3px solid lemonchiffon; */
+  border-radius: 0.6rem;
+  display: inline-block;
+  line-height: 40px;
+  background: gray;
+  position: relative;
+/*   transition: all 1s; */
+}
+.animate:before{
+  content: '';
+  margin-left: 10px;
+  color: green;
+  font-size: 30px;
+}
+.animate:after{
+  content: '';
+  color: white;
+  font-size: 25px;
+  margin-left: 0.3rem;
+}
+.block{
+  width:0.8rem;
+  height: 0.8rem;
+  line-height: 0.75rem;
+  display: inline-block;
+  background: white;
+  position: absolute;
+  left:0;
+  border-radius: 50%;
+  top:0;
+  /* transition: all .5s ease; */
+}
+.a:checked +label .block{
+  left:0.6rem;
+  /* background: green; */
+}
+.a:checked +label .animate{
+  background: red;
+}
+
+
+
+
+
+footer{
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 1.4rem;
+}
+footer button{
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 7.1rem;
+  height: 1rem;
+  background: red;
+  border: none;
+  font-size: 0.4rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+footer button:focus{
+  outline: none;
+}
+
+.phone input.active{
+  color: red;
+  /* border: 1px solid red; */
+}
+
+footer button.disable{
+  color: gray;
+  background: rgb(168,2,39);
+  cursor: not-allowed;
+}
+
+
+/* 侧边栏的样式书写 */
+aside{
+  width: 100%;
+  height: 100%;
+  background: rgba(103,103,103,0.6);
+  position: relative;
+  display: none;
+  position: absolute;
+  right: -7.5rem;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 2s linear;
+}
+.city{
+  position: absolute;
+  width: 6.5rem;
+  height: 100%;
+  right: 0;
+  top: 0rem;
+  background: #fff;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px gray;
+
+
+}
+.city select{
+  width: 100%;
+  height: 1rem;
+  /* background: lime; */
+  position: relative;
+  font-size: 0.32rem;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+.city select:focus{
+  outline: none;
+}
+
+.city select option{
+  text-align: center;
+}
+
+.error::-webkit-input-placeholder {
+color:red;
+}
+:-moz-placeholder {
+color:#999;
+}
+::-moz-placeholder {
+color:#999;
+}
+:-ms-input-placeholder {
+color:#999;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>订单支付</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/orderPayment.css">
+    <script src="js/rem.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <header>
+			<div class="container">
+				<a href="javascript:;" class="goback" id="goback">
+          <img src="./img/left_jiantou.png" alt="">
+        </a>
+				<span class="logout" id="logout">关闭</span>
+				<div class="main">
+					订单支付
+				</div>
+
+			</div>
+
+		</header>
+
+    <section>
+      <div class="successTitle">
+        <p class="info">
+          提交订单成功,请你尽快付款!
+        </p>
+        <p class="payMoney">
+          应付金额 <span>¥</span>
+          <span id="sumPrice">298.00</span>
+        </p>
+      </div>
+
+      <div class="zhifubao pay">
+        <div class="payimg">
+          <img src="./img/zhifubao.png" alt="">
+        </div>
+
+        <span class="payTitle">支付宝支付</span>
+        <span class="goPay">></span>
+      </div>
+      <div class="weixin pay">
+        <div class="payimg">
+          <img src="./img/weixin.png" alt="">
+        </div>
+
+        <span class="payTitle">微信支付</span>
+        <span class="goPay">></span>
+      </div>
+    </section>
+
+
+    <div class="alertModel">
+      <div class="model">
+        <div class='alertTitle'>
+          <p>确认要离开收银台?</p>
+          <i class="icon-remove-sign" id="modelClose"></i>
+        </div>
+
+        <div class="alertWarn">
+          <p>
+            商品很抢手,超时未支付将取消订单,你可以选择继续支付.
+          </p>
+        </div>
+        <div class="alertButton">
+          <a class="continue">继续支付</a>
+          <a class="leave" href="index.html">确认离开</a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/orderPayment.js" charset="utf-8"></script>
+
+  </body>
+</html>
