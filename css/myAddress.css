@@ -1,0 +1,161 @@
+.selectAddress .sa_header{
+
+  height: 1rem;
+  background: rgb(241,241,241);
+  border-bottom: 1px solid rgb(214,214,214);
+  position: fixed;
+  right: -10rem;
+  top: 0;
+  z-index: 15;
+  width: 100%;
+}
+
+.selectAddress .sa_header i{
+  float: left;
+  line-height: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 1rem;
+  text-align: center;
+}
+.selectAddress .sa_header p{
+  text-align: center;
+  font-size: 0.44rem;
+  line-height: 1rem;
+  margin: 0 0.8rem;
+  font-weight: 200;
+}
+
+
+.sa_section .addressAll .top img{
+  width: 0.45rem;
+  padding:0 0.3rem;
+  vertical-align: middle;
+  /* background: lime; */
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.sa_section{
+  position:fixed;
+  top:1rem;
+  bottom:1.4rem;
+  width:100%;
+  overflow:scroll;
+  z-index: 1;
+  background: rgb(241,241,241);
+}
+
+.sa_section .addressAll{
+  list-style: none;
+}
+
+.sa_section .addressAll li{
+  position: relative;
+  padding: 0.2rem 0;
+  padding: 0;
+  height: 2.3rem;
+  background: #fff;
+  margin: 0.25rem;
+  width: 93%;
+}
+
+.sa_section address{
+  overflow: hidden;
+  height: 1.5rem;
+  border-bottom: 1px solid rgb(241,241,241);
+}
+.sa_section address .checkImg{
+  width: 15%;
+  float: left;
+}
+.sa_section address .addressInfo{
+  float: right;
+ width: 85%;
+ padding: 0.1rem;
+ /* background: red; */
+ box-sizing: border-box;
+}
+.sa_section address .addressInfo .people{
+  font-size: 0.32rem;
+  width: 100%;
+}
+.sa_section address .addressInfo .people span{
+  display: inline-block;
+  width: 2.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sa_section address .addressInfo .sendTarget{
+  font-size: 0.26rem;
+  width: 100%;
+}
+.sa_section address .addressInfo .sendTarget .moren{
+  display: none;
+  /* padding: 0.1rem; */
+  border: 1px solid red;
+  color: red;
+}
+.sa_section address .addressInfo .sendTarget span.active{
+  display: inline-block;
+}
+
+/* address bottom */
+
+.sa_section .addressAll li .bottom{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0.8rem;
+  line-height: 0.8rem;
+
+}
+
+.sa_section .addressAll li .bottom span{
+  float: right;
+  font-size: 0.3rem;
+  color: rgb(150,150,150);
+  width: 1.5rem;
+
+  text-align: center;
+  line-height: 0.8rem;
+
+  /* background: yellow; */
+  padding-right: 0.2rem;
+  word-spacing: 0.1rem;
+}
+
+.sa_footer{
+  margin-top: 1rem;
+  position: fixed;
+  right: -10rem;
+  bottom: 0;
+  width: 100%;
+  height: 1.4rem;
+  z-index: 15;
+  background: #fff;
+}
+.sa_footer button{
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 7.1rem;
+  height: 1rem;
+  background: red;
+  border: none;
+  font-size: 0.4rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sa_footer button:focus{
+  outline: none;
+}

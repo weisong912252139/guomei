@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>店铺详情</title>
+		<link rel="stylesheet" type="text/css" href="css/store_details.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="title">
+				<img id="goback" src="img/left_jiantou.png"/>
+				<span>店铺详情</span>
+			</div>
+		</header>
+		<section>
+			<ul>
+				<li>
+					<img class="tianwo" src="img/tianwo2.png"/>
+					<div class="dian">
+						<h4>天喔专营店</h4>
+						<p>产品数量：294件产品</p>
+						<p>创店时间：2015-11-12</p>
+						<p>所在地：北京 朝阳区</p>
+						<p>客服电话：<a href="###">4009-190-199</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="pingjia">
+						<p>服务评价：<img src="img/5xing.png" /></p>
+						<p>物流服务：<img src="img/5xing.png" /></p>
+						<p>卖家服务：<img src="img/5xing.png" /></p>
+					</div>
+				</li>
+				<li>
+					<div class="jianjie"> 
+						<h3>店铺简介</h3>
+						<p>私人专属品酒师，带您长边全球好酒！</p>
+					</div>
+				</li>
+			</ul>
+			
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$('#goback').click(function(){
+		history.go(-1);
+	});
+		});
+	</script>
+</html>

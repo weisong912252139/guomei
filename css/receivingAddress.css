@@ -1,0 +1,178 @@
+*{
+  margin:0;
+  padding: 0;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid rgb(225,225,225);
+  box-sizing: border-box;
+  z-index: 2;
+}
+.container {
+  width: 100%;
+  height: 0.9rem;
+  background: rgb(239,239,239);
+}
+.goback{
+  float: left;
+  width: 0.8rem;
+  line-height: 0.9rem;
+  text-align: center;
+  /* background: red; */
+}
+.goback img{
+  width: 0.3rem;
+  height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+
+.main{
+  text-align: center;
+  font-size: 0.44rem;
+  line-height: 0.9rem;
+  margin: 0 0.8rem;
+  font-weight: 200;
+  /* background: lime; */
+}
+.logout{
+  float: right;
+  font-size: 0.36rem;
+  line-height: 0.9rem;
+  width: 1.5rem;
+  text-align: center;
+  color: rgb(131, 133, 136);
+  /* background: blue; */
+}
+
+/* section 编辑收货店址 */
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+
+section .addressAll .top img{
+  width: 0.45rem;
+  padding: 0.3rem;
+  vertical-align: middle;
+  /* background: lime; */
+}
+
+section{
+  position:fixed;
+  top:0.9rem;
+  bottom:1.4rem;
+  width:100%;
+  overflow:scroll;
+  z-index: 1;
+  background: rgb(241,241,241);
+}
+
+.addressAll{
+  list-style: none;
+}
+
+.addressAll li{
+  height: 2.3rem;
+  background: #fff;
+  margin-top: 0.25rem;
+  width: 100%;
+}
+address{
+  overflow: hidden;
+  /* background: blue; */
+  height: 1.5rem;
+}
+
+address .addressInfo{
+ width: 85%;
+ padding: 0.1rem;
+ /* background: red; */
+ box-sizing: border-box;
+}
+address .addressInfo .people{
+  font-size: 0.32rem;
+  width: 100%;
+}
+address .addressInfo .people span{
+  display: inline-block;
+  width: 2.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+address .addressInfo .sendTarget{
+  font-size: 0.26rem;
+  width: 100%;
+}
+address .addressInfo .sendTarget .moren{
+  /* padding: 0.1rem; */
+  border: 1px solid red;
+  color: red;
+  display: none;
+}
+address .addressInfo .sendTarget span.true{
+  display: inline-block;
+}
+
+/* address bottom */
+
+section .addressAll li .bottom{
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-top: 1px solid rgb(241,241,241);
+}
+
+section .addressAll li .bottom span{
+  float: right;
+  font-size: 0.3rem;
+  color: rgb(150,150,150);
+  width: 1.5rem;
+
+  text-align: center;
+  line-height: 0.8rem;
+
+  /* background: yellow; */
+  padding-right: 0.2rem;
+  word-spacing: 0.1rem;
+}
+
+
+
+
+
+
+
+footer{
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.4rem;
+  border-top: 1px solid rgb(218,218,218);
+}
+footer button{
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 7.1rem;
+  height: 1rem;
+  background: red;
+  border: none;
+  font-size: 0.4rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+footer button:focus{
+  outline: none;
+}

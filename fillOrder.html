@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>填写订单界面</title>
+    <script src="js/rem.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/fillOrder.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/selectSend.css">
+    <link rel="stylesheet" href="./css/myAddress.css">
+    <link rel="stylesheet" href="./css/invoiceAside.css">
+
+  </head>
+  <body>
+    <header>
+			<div class="container">
+				<a href="javascript:;" class="goback" id="goback"><img src="./img/left_jiantou.png" alt=""></a>
+				<div class="main">
+					填写订单
+				</div>
+
+			</div>
+
+		</header>
+
+    <section>
+      <address class="address" id="address">
+        <div class="addressInfo left">
+          <p class="people">
+            <span class="acceptPeop">魏松</span>
+            <span class="acceptNum">18336345030</span>
+          </p>
+          <p class="sendTarget">
+            <span class="moren">默认</span>
+            <span class="newAdd">北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西</span>
+
+          </p>
+        </div>
+        <i class="icon-angle-right right"></i>
+        <img src="./img/1.jpg" alt="">
+      </address>
+
+      <div class="shopItem" id="shopItem">
+        <div class="shopImg left">
+          <img src="./img/hongjiu.png" alt="">
+        </div>
+
+        <a class="shopInfo left">
+            <p>长虹(154)什么的的扔了链接路径长虹(154)什么的的扔了链接路径长虹(154)什么的的扔了链接路径长虹(154)什么的的扔了链接路径</p>
+        </a>
+        <i class="icon-angle-right right" id="rightList"></i>
+        <div class="priceAndNum right">
+          <p>
+            <span>¥</span><span>2521211.00</span><br>
+            <span>x1</span>
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="which">
+        <a class="payWhich">
+          <span class="title">支付方式</span>
+          <i class="icon-angle-right right"></i>
+          <span class="right">在线支付</span>
+        </a>
+        <a class="sendWhich twoLine" id='sendOne'>
+          <span class="title">配送方式</span>
+          <i class="icon-angle-right right"></i>
+          <div class="right mode">
+            <p id="sendTime">工作日送货</p>
+            <p id="sendMethod">普通快递</p>
+          </div>
+
+        </a>
+
+        <a class="sendWhich twoLine" id="sendTwo">
+          <span class="title">发票信息</span>
+          <i class="icon-angle-right right"></i>
+          <div class="right mode">
+            <p class="invoiceOne">无(点击选择)</p>
+            <p class="invoiceTwo">无</p>
+          </div>
+
+        </a>
+      </div>
+
+      <div class="remarks">
+        <p>备注</p><input type="text" name="" value="" placeholder="请填写备注信息">
+      </div>
+
+
+      <div class="shopAcounts">
+        <p>
+          <span class="one left">商品总计</span>
+          <span class="oneMoney right">¥ <span id="shopSum">599.00</span></span>
+        </p>
+        <p>
+          <span class="one left">运费</span>
+          <span class="oneMoney right">¥ <span>9.00</span></span>
+        </p>
+      </div>
+
+
+    </section>
+
+    <aside>
+      <div class="shoppingList">
+
+        <p class="asideTitle">
+          商品清单
+          <i class="icon-remove-sign" id='closeList'></i>
+        </p>
+
+        <div class="shopping">
+          <div class="list">
+            <p class="shopName">
+              <span class="name">自营店</span>
+            </p>
+            <ul class="list-item">
+            <!--   <li class="clearfix">
+              <div class="shopImg left">
+                <img src="./img/hongjiu.png" alt="">
+              </div>
+              <div class="shopDetails left">
+                <div class="shopDescript">
+                  <p>
+                    圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                    <span>黑色:约2020万</span>
+
+                  </p>
+                </div>
+
+                <div class="priceNum">
+                  <span class="count">x <span>1</span></span>
+                  <p class="price">
+                    <span>¥</span>
+                    <span>299.00</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="clearfix">
+              <div class="shopImg left">
+                <img src="./img/hongjiu.png" alt="">
+              </div>
+              <div class="shopDetails left">
+                <div class="shopDescript">
+                  <p>
+                    圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                    <span>黑色:约2020万</span>
+
+                  </p>
+                </div>
+
+                <div class="priceNum">
+                  <span class="count">x <span>1</span></span>
+                  <p class="price">
+                    <span>¥</span>
+                    <span>299.00</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="clearfix">
+              <div class="shopImg left">
+                <img src="./img/hongjiu.png" alt="">
+              </div>
+              <div class="shopDetails left">
+                <div class="shopDescript">
+                  <p>
+                    圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                    <span>黑色:约2020万</span>
+
+                  </p>
+                </div>
+
+                <div class="priceNum">
+                  <span class="count">x <span>1</span></span>
+                  <p class="price">
+                    <span>¥</span>
+                    <span>299.00</span>
+                  </p>
+                </div>
+              </div>
+            </li> -->
+
+            </ul>
+          </div>
+
+          <div class="list">
+            <p class="shopName">
+              <span class="name">自营店</span>
+            </p>
+            <ul class="list-item">
+              <li class="clearfix">
+                <div class="shopImg left">
+                  <img src="./img/hongjiu.png" alt="">
+                </div>
+                <div class="shopDetails left">
+                  <div class="shopDescript">
+                    <p>
+                      圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                      <span>黑色:约2020万</span>
+
+                    </p>
+                  </div>
+
+                  <div class="priceNum">
+                    <span class="count">x <span>1</span></span>
+                    <p class="price">
+                      <span>¥</span>
+                      <span>299.00</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="clearfix">
+                <div class="shopImg left">
+                  <img src="./img/hongjiu.png" alt="">
+                </div>
+                <div class="shopDetails left">
+                  <div class="shopDescript">
+                    <p>
+                      圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                      <span>黑色:约2020万</span>
+
+                    </p>
+                  </div>
+
+                  <div class="priceNum">
+                    <span class="count">x <span>1</span></span>
+                    <p class="price">
+                      <span>¥</span>
+                      <span>299.00</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="clearfix">
+                <div class="shopImg left">
+                  <img src="./img/hongjiu.png" alt="">
+                </div>
+                <div class="shopDetails left">
+                  <div class="shopDescript">
+                    <p>
+                      圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                      <span>黑色:约2020万</span>
+
+                    </p>
+                  </div>
+
+                  <div class="priceNum">
+                    <span class="count">x <span>1</span></span>
+                    <p class="price">
+                      <span>¥</span>
+                      <span>299.00</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="shopImg left">
+                  <img src="./img/hongjiu.png" alt="">
+                </div>
+                <div class="shopDetails left">
+                  <div class="shopDescript">
+                    <p>
+                      圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                      <span>黑色:约2020万</span>
+
+                    </p>
+                  </div>
+
+                  <div class="priceNum">
+                    <span class="count">x <span>1</span></span>
+                    <p class="price">
+                      <span>¥</span>
+                      <span>299.00</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="shopImg left">
+                  <img src="./img/hongjiu.png" alt="">
+                </div>
+                <div class="shopDetails left">
+                  <div class="shopDescript">
+                    <p>
+                      圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                      <span>黑色:约2020万</span>
+
+                    </p>
+                  </div>
+
+                  <div class="priceNum">
+                    <span class="count">x <span>1</span></span>
+                    <p class="price">
+                      <span>¥</span>
+                      <span>299.00</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="shopImg left">
+                  <img src="./img/hongjiu.png" alt="">
+                </div>
+                <div class="shopDetails left">
+                  <div class="shopDescript">
+                    <p>
+                      圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                      <span>黑色:约2020万</span>
+
+                    </p>
+                  </div>
+
+                  <div class="priceNum">
+                    <span class="count">x <span>1</span></span>
+                    <p class="price">
+                      <span>¥</span>
+                      <span>299.00</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="shopImg left">
+                  <img src="./img/hongjiu.png" alt="">
+                </div>
+                <div class="shopDetails left">
+                  <div class="shopDescript">
+                    <p>
+                      圣职红酒发过银奖干红圣职红酒发过银奖干红圣职红酒发过银奖干红<br>
+                      <span>黑色:约2020万</span>
+
+                    </p>
+                  </div>
+
+                  <div class="priceNum">
+                    <span class="count">x <span>1</span></span>
+                    <p class="price">
+                      <span>¥</span>
+                      <span>299.00</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              
+
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+    </aside>
+
+
+    <div class="sendMessage">
+      <div class="header">
+        <div class="container">
+          <a href="javascript:;" class="goback" id="back"><img src="./img/left_jiantou.png" alt=""></a>
+          <div class="main">
+            选择配送方式
+          </div>
+
+        </div>
+
+      </div>
+      <div class="section">
+            <div class="sendTime">
+              <p>配送时间</p>
+              <div class="whichTime">
+                <span class="active">工作日送货</span>
+                <span>节假日送货</span>
+                <span>时间不限</span>
+              </div>
+            </div>
+            <div class="sendMethod">
+              <p class="title">配送方式</p>
+              <p class="details">由[国美在线]配送三件商品</p>
+              <div class="img">
+                <img src="./img/peisong.jpg" alt="">
+
+              </div>
+              <div class="whichMethod">
+                <span class="active">快递</span>
+                <span>平邮</span>
+                <span>邮政</span>
+              </div>
+
+            </div>
+
+
+
+      </div>
+
+      <div class="footer">
+        <button id="sure">确定</button>
+      </div>
+    </div>
+
+    <div class="invoice">
+      <div class="header">
+        <div class="container">
+          <a href="javascript:;" class="goback" id="invoiceback"><img src="./img/left_jiantou.png" alt=""></a>
+          <div class="main">
+            发票信息
+          </div>
+
+        </div>
+
+      </div>
+      <div class="section">
+            <div class="sendTime" id="isNeed">
+              <p>发票信息</p>
+              <div class="whichTime">
+                <span id='need' class="active">需要发票</span>
+                <span id="notNeed">暂不需要发票</span>
+
+              </div>
+            </div>
+            <div class="sendTime selectOne">
+              <p>发票类型</p>
+              <div class="whichTime option">
+                <span class="active">普通纸质发票</span>
+                <span> 网络电子发票</span>
+              </div>
+            </div>
+
+            <!-- <div class="invoiceHead">
+              <p>发票抬头</p>
+              <div class="whichHead">
+                <p>
+                  <span class="checkbox"><span class="circle"></span></span>
+                  <span class="option">个人</span>
+                </p>
+                <p>
+                  <span class="checkbox">
+                    <span class="circle"></span>
+                  </span>
+                  <span class="option">单位</span>
+                  <input type="text" name="" value="">
+                </p>
+
+              </div>
+            </div> -->
+            <div class="sendMethod selectTwo">
+              <p class="title">发票内容</p>
+              <p class="details">选择项目:</p>
+
+              <div class="whichMethod option">
+                <span class="active">明细</span>
+                <span>酒</span>
+                <span>其他</span>
+              </div>
+              <p class="details">由店铺决定,发票由店铺开具并寄出.</p>
+
+            </div>
+
+
+
+      </div>
+
+      <div class="footer">
+        <button id="invoicesure">确定</button>
+      </div>
+
+
+
+
+    </div>
+
+
+    <!-- <div class="selectAddress">
+      <div class="sa_header">
+        <i class="icon-angle-left" id="sa_back"></i>
+        <p>收货地址</p>
+      </div>
+
+      <div class="sa_section">
+        <ul class="addressAll">
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren active">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+
+              <address class="address">
+                <div class="checkImg">
+                  <img src="./img/uncheck.png" alt="">
+                </div>
+
+                <div class="addressInfo">
+                  <p class="people">
+                    <span class="acceptPeop">魏松</span>
+                    <span class="acceptNum">18336345030</span>
+                  </p>
+                  <p class="sendTarget">
+                    <span class="moren">默认</span>
+                    北京北京市朝阳区(五环里) 潘家园蓝鸥科技H12版 某某的东西
+                  </p>
+                </div>
+              </address>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <i class="icon-edit"></i>
+                编辑
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sa_footer">
+        <button>新增收货地址</button>
+      </div>
+    </div> -->
+
+    <footer>
+      <p>
+        <span class="yingfu">应付金额:</span>
+        <span class="pay">¥<span class="payMoney">200.00</span></span>
+        <a class="submit">提交订单</a>
+      </p>
+    </footer>
+
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+
+    <script src="js/fillOrder.js" charset="utf-8"></script>
+
+
+  </body>
+</html>
